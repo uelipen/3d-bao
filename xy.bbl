@@ -1,0 +1,38 @@
+\begin{thebibliography}{4}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{{McQuinn} and {White}}(2016)}]{2016matt}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{McQuinn}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{White}}},
+  \bibinfo{journal}{\jcap} \textbf{\bibinfo{volume}{1}}, \bibinfo{eid}{043}
+  (\bibinfo{year}{2016}), \eprint{1502.07389}.
+
+\bibitem[{\citenamefont{{Crocce} and {Scoccimarro}}(2006)}]{2006crocce}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Crocce}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Scoccimarro}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{73}}, \bibinfo{eid}{063520}
+  (\bibinfo{year}{2006}), \eprint{astro-ph/0509419}.
+
+\bibitem[{\citenamefont{{Crocce} and {Scoccimarro}}(2008)}]{2008crocce}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Crocce}}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Scoccimarro}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{77}}, \bibinfo{eid}{023533}
+  (\bibinfo{year}{2008}), \eprint{0704.2783}.
+
+\bibitem[{\citenamefont{{Matsubara}}(2008)}]{2008matsubara}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{{Matsubara}}},
+  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{77}}, \bibinfo{eid}{063530}
+  (\bibinfo{year}{2008}), \eprint{0711.2521}.
+
+\end{thebibliography}
