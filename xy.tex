@@ -21,12 +21,12 @@
 \newcommand{\tcb}{\textcolor{blue}}
 \newcommand{\bea}{\begin{eqnarray}}
 \newcommand{\eea}{\end{eqnarray}}
+\newcommand{\bmp}{\bm{\Psi}}
+\newcommand{\bms}{\bm{s}}
 \newcommand{\bmk}{\bm{k}}
 \newcommand{\bmx}{\bm{x}}
 \newcommand{\la}{\langle}
 \newcommand{\ra}{\rangle}
-\newcommand{\nl}{\mr{NL}}
-
 
 
 \begin{document}
@@ -36,39 +36,35 @@
 %\hspace{5.2in} \mbox{Fermilab-Pub-04/xxx-E}
 
 
-\title{Reconstruction of Baryon Acoustic Oscillations in 3+1 Dimensions}
+\title{Note on Reconstruction beyond the Zel'dovich approximation}
 
-%\author{Hong-Ming Zhu}
-%\affiliation{Key Laboratory for Computational Astrophysics, National Astronomical Observatories, Chinese Academy of Sciences, 20A Datun Road, Beijing 100012, China}
-%\affiliation{University of Chinese Academy of Sciences, Beijing 100049, China}
-%
-%\author{Ue-Li Pen}
-%\affiliation{Canadian Institute for Theoretical Astrophysics, University of Toronto, 60 St. George Street, Toronto, Ontario M5S 3H8, Canada}
-%\affiliation{Dunlap Institute for Astronomy and Astrophysics, University of Toronto, 50 St. George Street, Toronto, Ontario M5S 3H4, Canada}
-%\affiliation{Canadian Institute for Advanced Research, CIFAR Program in Gravitation and Cosmology, Toronto, Ontario M5G 1Z8, Canada}
-%\affiliation{Perimeter Institute for Theoretical Physics, 31 Caroline Street North, Waterloo, Ontario, N2L 2Y5, Canada}
-%
+\author{Hong-Ming Zhu}
+\affiliation{Key Laboratory for Computational Astrophysics, National Astronomical Observatories, Chinese Academy of Sciences, 20A Datun Road, Beijing 100012, China}
+\affiliation{University of Chinese Academy of Sciences, Beijing 100049, China}
+
+\author{Yu Yu}
+\affiliation{Key Laboratory for Research in Galaxies and Cosmology,
+Shanghai Astronomical Observatory, Chinese Academy of Sciences,
+80 Nandan Road, Shanghai 200030, China}
+
+\author{Ue-Li Pen}
+\affiliation{Canadian Institute for Theoretical Astrophysics, University of Toronto, 60 St. George Street, Toronto, Ontario M5S 3H8, Canada}
+\affiliation{Dunlap Institute for Astronomy and Astrophysics, University of Toronto, 50 St. George Street, Toronto, Ontario M5S 3H4, Canada}
+\affiliation{Canadian Institute for Advanced Research, CIFAR Program in Gravitation and Cosmology, Toronto, Ontario M5G 1Z8, Canada}
+\affiliation{Perimeter Institute for Theoretical Physics, 31 Caroline Street North, Waterloo, Ontario, N2L 2Y5, Canada}
+
 %\author{Matthew McQuinn}
 %\affiliation{Department of Astronomy, University of Washington, Seattle, WA 98195, USA}
-%
-%\author{Xuelei Chen}
-%\affiliation{Key Laboratory for Computational Astrophysics, National Astronomical Observatories, Chinese Academy of Sciences, 20A Datun Road, Beijing 100012, China}
-%\affiliation{University of Chinese Academy of Sciences, Beijing 100049, China}
-%\affiliation{Center of High Energy Physics, Peking University, Beijing 100871, China}
+
+\author{Xuelei Chen}
+\affiliation{Key Laboratory for Computational Astrophysics, National Astronomical Observatories, Chinese Academy of Sciences, 20A Datun Road, Beijing 100012, China}
+\affiliation{University of Chinese Academy of Sciences, Beijing 100049, China}
+\affiliation{Center of High Energy Physics, Peking University, Beijing 100871, China}
 
 \date{\today}
 
 \begin{abstract}
 In this paper we introduce a new way to reconstruct BAO peaks in real space.
-
-title 0: Reconstructing the Primordial Density Field in 1+1 Dimensions
-
-title 1: Reconstruction of BAO Peaks in 1+1 Dimensions
-
-title 2: Baryon Acoustic Oscillations Reconstruction in 1+1 Dimensions.
-
-title 2: BAO Reconstruction in 1+1 Dimensions.
-
 \end{abstract}
 
 \pacs{}
@@ -77,7 +73,8 @@ title 2: BAO Reconstruction in 1+1 Dimensions.
 %\section{\label{sec:level1}First-level heading}
 % sections are not used for PRL papers
 
-{\it Introduction.}---The imprint of baryon acoustic oscillations (BAO) in the
+\section{Introduction}
+The imprint of baryon acoustic oscillations (BAO) in the
 large-scale structure provides a standard ruler to measure the expansion rate
 of the Universe. Precise measurements of the BAO feature are crucial for 
 probing the dynamics of dark energy.
@@ -175,11 +172,55 @@ motion beyond the Zel'dovich displacement.
 The real displacement field is available in $N$-body simulations. It can be
 decomposed and compared with the reconstructed lattice displacement to see
 how much information is reconstructed. 
-\tcb{I think this is what Qiaoyin and Haoran working on now?}
-%=======================================
+%=====
+
+\section{Displacement Decomposition}
+The displacement field $\bmp$ can be decomposed into an irrotational part and
+a curl part,
+\bea
+\bm{\Psi}=\bm{\Psi}_E+\bm{\Psi}_B,
+\eea
+where $\nabla\times\bm{\Psi}_E=0$ and $\nabla\cdot\bm{\Psi}_B=0$. 
+We further decompose $\bmp_E$ as
+\bea
+\bmp_E=\bmp_E^{(l)}+\bms_E^{(nl)}.
+\eea
+
+The density field is given by
+\bea
+\delta_E^{(l)}=-\nabla\cdot\bmp_E^{(l)}
+\eea
+
+The density field is given by
+\bea
+\delta_E^{(nl)}=-\nabla\cdot\bmp_E^{(nl)}
+\eea
 
 
-{\it Reconstruction algorithm.}---The Lagrangian displacement can be solved
+The displacement can be written as
+\bea
+\bm{\Psi}=\bm{\Psi}_E^{(l)}+\bm{\Psi}_E^{(nl)}+\bm{\Psi}_B,
+\eea
+
+
+\subsection{Power spectra of displacement fields}
+Show the power spectra of different displacement componenets ...
+
+
+\subsection{PDFs}
+Show the pdf of the displacement fields, maybe the density field?
+
+
+\subsection{Cross correlations}
+Show the cross correlation coefficients of the nonlinear density field and 
+the linear density field ...
+
+
+
+\section{Reconstruction algorithm}
+Discuss how to solve the deformation potential.
+
+The Lagrangian displacement can be solved
 easily in 1+1 dimensions by ordering of the mass elements.
 
 (1) Solve the displacement $\Psi(q)$ field by ordering of the mass elements.
@@ -187,16 +228,12 @@ easily in 1+1 dimensions by ordering of the mass elements.
 (2) Take the differential derivative of $\Psi(q)$ to get the reconstructed
 density field $\delta_r(\bm{q})=-\nabla_{\bm{q}}\Psi(\bm{q})$.
 $\delta_r(\bm{q})=-\partial\Psi(q)/\partial q$.
-
-To solve the displacement field, we combine grids to get two fields with
-five PM elements per grid and ten PM elements per grid, respectively.
-
-Reconstruction from the gridded density field can be implemented following
-the same principle, which we adopt here [].
 %=======================================
 
 
-{\it Simulations.}---We adopt the 1D $N$-body simualtions in 
+\section{Simulations and performance}
+
+We adopt the 1D $N$-body simualtions in 
 Ref. \cite{2016matt}
 and use outputs at $z=0$. The simulation box is $10^8\ \mr{Mpc}$ with 
 $3\times10^8$ grids and $3\times10^8$ PM elements.
@@ -205,13 +242,12 @@ growth factor to get the linear density field $\delta_L$ at $z=0$.
 Note that $\delta_L$ has been rescaled using the linear growth function
 to the same redshift as $\delta$. 
 
+\subsection{Deformation potential}
+Show the visual grid deformation.  
 
-Figure \ref{fig:ps} shows the linear, nonlinear and reconstructed power spectra,
-as well as the cross-corrlation power spectra.
-The correlation of the reconstruction density field $\delta_r$ with the linear
-density field $\delta_L$ is much better than that of the raw nonlinear density 
-field $\delta$. The wiggles in the reconstructed power spectrum are also much 
-more transparent than the raw nonlinear power spectrum.
+\subsection{Statistics}
+Show resonctruction from linear density fields and $z=0$ density field.
+Different configurations.
 
 \begin{figure}[tbp]
 \begin{center}
@@ -224,10 +260,9 @@ We also plot the nonlinear-linear (thick dotted line) and
 reconstructed-linear (thin dotted line) cross-correlation power spectra.}
 \label{fig:ps}
 \end{figure}
-%=======================================
 
 
-{\it Results.}---To convenienty quantify the linear information $\delta_L$ in 
+To convenienty quantify the linear information $\delta_L$ in 
 the nonlinear density field $\delta$, we decompose the nonlinear density field
 $\delta$ as
 \begin{eqnarray}
@@ -316,7 +351,9 @@ Distribution functions
 %=======================================
 
 
-{\it Discussions.}---The new method significantly
+\section{Discussions and conclusions}
+
+The new method significantly
 improves the expansion rate measurement from BAO. (more discussions?) 
 
 
@@ -334,7 +371,7 @@ If use the displacement solved in this paper for the standard BAO rec, we expect
 the performance will become much better but still not as good as our results.
 %=======================================
 
-
+\section{Acknowledgement}
 We acknowledge the support of the Chinese MoST 863 program under Grant 
 No. 2012AA121701, the CAS Science Strategic Priority Research Program 
 XDB09000000, the NSFC under Grant No. 11373030, IAS at Tsinghua University, 
