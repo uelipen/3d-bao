@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{5}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -18,21 +18,35 @@
   \bibinfo{journal}{\jcap} \textbf{\bibinfo{volume}{1}}, \bibinfo{eid}{043}
   (\bibinfo{year}{2016}), \eprint{1502.07389}.
 
-\bibitem[{\citenamefont{{Crocce} and {Scoccimarro}}(2006)}]{2006crocce}
-\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Crocce}}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Scoccimarro}}},
-  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{73}}, \bibinfo{eid}{063520}
-  (\bibinfo{year}{2006}), \eprint{astro-ph/0509419}.
+\bibitem[{\citenamefont{{Zhu} et~al.}(2016)\citenamefont{{Zhu}, {Pen}, and
+  {Chen}}}]{2016arXiv160907041Z}
+\bibinfo{author}{\bibfnamefont{H.-M.} \bibnamefont{{Zhu}}},
+  \bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Chen}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2016}),
+  \eprint{1609.07041}.
 
-\bibitem[{\citenamefont{{Crocce} and {Scoccimarro}}(2008)}]{2008crocce}
-\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Crocce}}} \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Scoccimarro}}},
-  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{77}}, \bibinfo{eid}{023533}
-  (\bibinfo{year}{2008}), \eprint{0704.2783}.
+\bibitem[{\citenamefont{{Pen}}(1995)}]{1995ApJS..100..269P}
+\bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}},
+  \bibinfo{journal}{\apjs} \textbf{\bibinfo{volume}{100}}, \bibinfo{pages}{269}
+  (\bibinfo{year}{1995}).
 
-\bibitem[{\citenamefont{{Matsubara}}(2008)}]{2008matsubara}
-\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{{Matsubara}}},
-  \bibinfo{journal}{\prd} \textbf{\bibinfo{volume}{77}}, \bibinfo{eid}{063530}
-  (\bibinfo{year}{2008}), \eprint{0711.2521}.
+\bibitem[{\citenamefont{{Pen}}(1998)}]{1998ApJS..115...19P}
+\bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}},
+  \bibinfo{journal}{\apjs} \textbf{\bibinfo{volume}{115}}, \bibinfo{pages}{19}
+  (\bibinfo{year}{1998}), \eprint{astro-ph/9704258}.
+
+\bibitem[{\citenamefont{{Harnois-D{\'e}raps}
+  et~al.}(2013)\citenamefont{{Harnois-D{\'e}raps}, {Pen}, {Iliev}, {Merz},
+  {Emberson}, and {Desjacques}}}]{2013code}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Harnois-D{\'e}raps}}},
+  \bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}},
+  \bibinfo{author}{\bibfnamefont{I.~T.} \bibnamefont{{Iliev}}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{{Merz}}},
+  \bibinfo{author}{\bibfnamefont{J.~D.} \bibnamefont{{Emberson}}},
+  \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{{Desjacques}}},
+  \bibinfo{journal}{\mnras} \textbf{\bibinfo{volume}{436}},
+  \bibinfo{pages}{540} (\bibinfo{year}{2013}), \eprint{1208.5098}.
 
 \end{thebibliography}
